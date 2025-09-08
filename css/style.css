@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+  margin: 0;
+}
+
+/****************   Nav Section **********************/
+nav {
+  background-color: #738CA6;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border-bottom: 2px solid #133253; /* darker blue */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav-contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+	margin-top: 2em; 
+  text-align: center; 
+  font-size: 1.1em;
+  justify-content: center;
+}
+
+/*********** Splash Page ************************/
+header {
+  background: linear-gradient(90deg, #e3f2fd 0%, #90caf9 100%);
+  padding: 2em 0 1em 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(19, 50, 83, 0.08);
+  border-bottom: 2px solid #133253; /* darker blue */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #133253;
+  letter-spacing: 1px;
+  font-family:'Times New Roman', Times, serif
+}
+
+header img {
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(19, 50, 83, 0.12);
+  margin-top: 1em;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid #133253; /* darker blue */
+}
+
+.address {
+ font-weight: 700;
+  color: #133253;
+}
+
+.tagline {
+   font-weight: 200;
+  color: azure;
+  text-shadow: #133253 2px 1px;
+}
+
+/************* Sections ********************/
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, #738CA6 0%, #3949ab 100%);
+  margin: 2em 0;
+  border-radius: 2px;
+}
+
+section h3 {
+  font-family: 'Epunda Slab', serif;
+  color: #3949ab;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-left: 5px solid #738CA6;
+  padding-left: 0.5em;
+  background: linear-gradient(90deg, #e3f2fd 0%, #fff 100%);
+  box-shadow: 0 2px 8px rgba(19, 50, 83, 0.04);
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5em 2em;
+  align-items: start;
+  margin-bottom: 1em;
+}
+
+section ul {
+  list-style-type: square;
+  padding-left: 1.5em;
+  color: #133253;
+  font-size: 1.05em;
+  margin-bottom: 1em;
+}
+
+section dt, dd {
+  margin-left: 5px;
+}
+
+section a {
+text-decoration: none;
+background-color: transparent;
+color: #738CA6;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  justify-items: center;
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 8px rgba(19, 50, 83, 0.10);
+  border: 2px solid #738CA6;
+}
+  .card {
+    background: #f5f7fa;
+    border-radius: 16px;
+    box-shadow: 2px 4px 16px black;
+    border: 1px solid #e3eafc;
+    padding: 1.5em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .card:hover {
+    box-shadow: 0 8px 24px rgba(19, 50, 83, 0.18);
+    transform: translateY(-4px) scale(1.03);
+  }
+  /* ...existing code... */
+
+.card {
+  background: #f5f7fa;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(19, 50, 83, 0.10);
+  border: 1px solid #e3eafc;
+  padding: 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  margin: 0;
+}
+.card:hover {
+  box-shadow: 0 8px 24px rgba(19, 50, 83, 0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1em 0.5em;
+      gap: 0.5em;
+      background-color: #738CA6;
+      border-bottom: none;
+      box-shadow: 0 2px 8px rgba(19, 50, 83, 0.08);
+    }
+    .nav-name {
+      font-size: 1.3em;
+      margin-bottom: 0.5em;
+    }
+    .nav-contact {
+      width: 100%;
+      text-align: left;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5em;
+      justify-items: center;
+      width: 100vw;
+      margin: 0 1em 0 1em;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  color: #1a237e;
+  background: #e3f2fd;
+  border-bottom: 2px solid #3949ab;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75em 1em;
+  margin-bottom: 1em;
+  border: 1.5px solid #738CA6;
+  border-radius: 8px;
+  font-size: 1em;
+/* Removed empty ruleset for textarea */
+  font-family: 'Roboto', Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(19, 50, 83, 0.08);
+  background: #f5f7fa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus,
+textarea:focus {
+  border-color: #3949ab;
+  box-shadow: 0 4px 16px rgba(19, 50, 83, 0.15);
+  outline: none;
+}
