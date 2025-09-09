@@ -11,16 +11,20 @@
         <span class="nav-name">Kenneth Hoang</span>
         <span class="nav-contact"><a href="index.html">About Kenneth Hoang</a></span>
     </nav>
-    <h1> Kenneth Hoang</h1>
-     <p> 1734 E Broad St, Athens, 30601 • 470-844-3502 • kah88538@uga.edu</p>
-     <p> I am interested in doing Software Engineering!</p>
-     <hr>
-    <section class="one-col">
-        <form action="https://formsubmit.co/your_unique_form_id" method="POST" >
-            <p>Name:<input type="text" name="name" placeholder="Your Name" required></p>
-            <p>Email:<input type="email" name="email" placeholder="Your Email" required></p>
-            <p>Message:</p><textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+    <header style="background: linear-gradient(90deg, #e3f2fd 0%, #90caf9 100%); padding: 2em 0 1em 0; text-align: center; box-shadow: 0 2px 8px rgba(19, 50, 83, 0.08); border-bottom: 2px solid #133253;">
+        <h1 style="font-family: 'Epunda Slab', serif; font-size: 2.2em; color: #133253; margin-bottom: 0.3em;">Contact Kenneth Hoang</h1>
+        <p class="address" style="font-weight: 700; color: #133253; font-size: 1.1em;">1734 E Broad St, Athens, 30601 • <a href="tel:4708443502" style="color: #3949ab; text-decoration: none;">470-844-3502</a> • <a href="mailto:kah88538@uga.edu" style="color: #3949ab; text-decoration: none;">kah88538@uga.edu</a></p>
+        <p class="tagline" style="font-weight: 200; color: azure; font-size: 1.1em; margin-bottom: 0.5em;">I am interested in doing Software Engineering!</p>
+    </header>
+    <section class="one-col" style="max-width: 480px; margin: 2em auto; background: #f5f7fa; border-radius: 16px; box-shadow: 0 4px 16px rgba(19, 50, 83, 0.10); padding: 2em 1.5em; border: 1px solid #e3eafc;">
+        <form action="https://formsubmit.co/your_unique_form_id" method="POST" style="display: flex; flex-direction: column; gap: 1.2em;">
+            <label for="name" style="font-weight: 600; color: #3949ab; margin-bottom: 0.3em;">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email" style="font-weight: 600; color: #3949ab; margin-bottom: 0.3em;">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="message" style="font-weight: 600; color: #3949ab; margin-bottom: 0.3em;">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required rows="5"></textarea>
+            <button type="submit" style="background: #3949ab; color: #fff; border: none; border-radius: 8px; padding: 0.8em 1.5em; font-size: 1em; font-weight: 600; cursor: pointer; margin-top: 1em; transition: background 0.2s;">Send Message</button>
         </form>
      </section>
 
